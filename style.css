@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(135deg, #E8F7EE, #C9D6EA);
+    color: #3C362A;
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding: 0;
+    transition: background 1s ease;
+}
+.container {
+    text-align: center;
+    padding: 4em 1em;
+    max-width: 800px;
+    margin: auto;
+}
+h1 {
+    font-size: 3em;
+    color: #663F46;
+    margin-bottom: 0.2em;
+}
+.subtitle {
+    color: #3C362A;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    opacity: 0.8;
+}
+.mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2.5em;
+}
+button {
+    background-color: #B8C4BB;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    font-size: 1em;
+    color: #3C362A;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+button:hover {
+    transform: translateY(-3px);
+    background-color: #C9D6EA;
+    box-shadow: 0 4px 15px rgba(012, 63, 70, 0.2);
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.gallery.show {
+    opacity: 1;
+}
+.song-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0 ,0 0.1);
+    padding: 1em;
+    width: 200px;
+    transition: all 0.4s ease;
+}
+.song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(102, 63, 70, 0.25);
+}
+.song-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.8em;
+}
+.song-title {
+    font-weight: bold;
+    color:#663F46;
+    margin-bottom: 0.3em;
+}
+.song-artist {
+    font-style: italic;
+    color: #3C362A;
+    margin-bottom: 0.6em;
+}
+.song-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #663F46;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+.song-link:hover {
+    color: #3C362A;
+}
